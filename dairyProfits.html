@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Dairy Profit and loss</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <center>
+                <h1>Enter this form once a week OR scroll down to enter the monthly form</h1> <button class="btn btn-danger" onclick="back()">Click this if you get a new cow and reenter the amount of cows you have.</button>
+
+                <H2>Amount of milk each cow produces</H1>
+                    <input style="background-color: yellowgreen; width: 380px;" id="cow_milk" type="number" placeholder="Amount of milk each cow produces (in litre)">
+                    <br><br><br>
+                
+                <H2>Salary of each worker</H2>
+                    <input style="background-color: yellowgreen; width: 380px;" id="Salary_worker" type="number" placeholder="Salary of each worker (in rupee ₹₹₹)">
+                    <br><br><br>   
+
+                <H2>Money spent on food each week</H2>
+                    <input style="background-color: yellowgreen; width: 380px;" id="Money_food" type="number" placeholder="Money spent on food (in rupee ₹₹₹)">
+                    <br><br><br>  
+                    
+                <H2>Money spent on medication each week</H2>
+                    <input style="background-color: yellowgreen; width: 380px;" id="Money_medication" type="number" placeholder="Money spent on medication (in rupee ₹₹₹)">
+                    <br><br><br>
+
+                <H2>Cost of 1 litre of milk</H2>
+                    <input style="background-color: yellowgreen; width: 380px;" id="Milk_price" type="number" placeholder="Cost of 1 litre of milk (in rupee ₹₹₹)">
+                    <br><br><br>
+                
+                <button class="btn btn-success" onclick="weekly()">Submit</button>
+
+                <h1>The profit you earned this week was: </h1>
+                <div id="output"></div>
+            </center>
+        </div> 
+        <br><hr><br>
+        <div class="container">
+            <center>
+                <h1>Enter this form once a month OR scroll up to enter the weekly form</h1>
+
+                <H2>Amount of milk each cow produces</H1>
+                    <input style="background-color: yellowgreen; width: 380px;" id="cow_milkMonth" type="number" placeholder="Amount of milk each cow produces (in litre)">
+                    <br><br><br>
+                
+                <H2>Salary of each worker</H2>
+                    <input style="background-color: yellowgreen; width: 380px;" id="Salary_workerMonth" type="number" placeholder="Salary of each worker (in rupee ₹₹₹)">
+                    <br><br><br>   
+
+                <H2>Money spent on food each month</H2>
+                    <input style="background-color: yellowgreen; width: 380px;" id="Money_foodMonth" type="number" placeholder="Money spent on food (in rupee ₹₹₹)">
+                    <br><br><br>  
+                    
+                <H2>Money spent on medication each month</H2>
+                    <input style="background-color: yellowgreen; width: 380px;" id="Money_medicationMonth" type="number" placeholder="Money spent on medication (in rupee ₹₹₹)">
+                    <br><br><br>
+
+                <H2>Cost of 1 litre of milk</H2>
+                <input style="background-color: yellowgreen; width: 380px;" id="Milk_priceMonth" type="number" placeholder="Cost of 1 litre of milk (in rupee ₹₹₹)">
+                    <br><br><br>
+                
+                <button class="btn btn-success" onclick="monthly()">Submit</button>
+
+                <h1>The profit you earned this month was: </h1>
+                <div id="outputMonthly"></div>
+            </center>
+        </div> 
+    </body>
+    <script src="main.js"></script>
+</html>
